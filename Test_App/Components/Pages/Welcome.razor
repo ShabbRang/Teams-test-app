@@ -1,0 +1,129 @@
+﻿@using Microsoft.Extensions.Configuration
+@using Microsoft.AspNetCore.Hosting
+@using Microsoft.Extensions.Hosting
+@inject TeamsUserCredential teamsUserCredential
+@inject IWebHostEnvironment HostEnvironment
+@inject IConfiguration Configuration
+@inject NavigationManager MyNavigationManager
+@inject IJSRuntime JS
+@inject Test_App.Services.SignalRAudioService AudioService
+
+@if (isLoading)
+
+{
+    <div style="display: flex; justify-content: center; align-items: center; min-height: 100vh;">
+        <FluentProgressRing />
+    </div>
+}
+
+else
+
+{
+    <div class="welcome page">
+        <div class="narrow page-padding">
+            <img src="hello.png" />
+            <h1 class="center">Congratulations@(!String.IsNullOrEmpty(userName) ? ", " + userName : "")!</h1>
+            <div class="center red-button">
+                <FluentButton class="fluent-button-large" Appearance="Appearance.Accent" @onclick="ConnectAndPlayAudio">Call Now</FluentButton>
+            </div>
+            <div id="message" class="centered-message">
+                <!-- Message will be updated here -->
+                <p>@message</p>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    private string message = string.Empty;  // Variable to hold the message
+
+
+
+    private async Task ConnectAndPlayAudio()
+
+    {
+
+        await AudioService.StartConnectionAsync();
+
+        await AudioService.PlayAudioAsync(OnAudioStarted, OnAudioEnded); // Pass callback methods
+
+    }
+
+
+
+    private void OnAudioStarted()
+
+    {
+
+        message = "Calling...";  // Update the message when audio starts
+
+        StateHasChanged(); // Notify the component to re-render
+
+    }
+
+
+
+    private void OnAudioEnded()
+
+    {
+
+        message = "Call has ended.";  // Update the message when audio ends
+
+        StateHasChanged(); // Notify the component to re-render
+
+    }
+
+
+
+    string userName;
+
+    string errorMessage;
+
+    bool isLoading = true;
+
+
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+
+    {
+
+        await base.OnAfterRenderAsync(firstRender);
+
+        try
+
+        {
+
+            if (firstRender)
+
+            {
+
+                var user = await teamsUserCredential.GetUserInfoAsync();
+
+                userName = user.DisplayName;
+
+            }
+
+        }
+
+        finally
+
+        {
+
+            isLoading = false;
+
+            StateHasChanged();
+
+        }
+
+    }
+
+
+
+    private string GetEnvironmentName()
+
+    {
+
+        return HostEnvironment.IsDevelopment() ? "local environment" : "Azure environment";
+
+    }
+}

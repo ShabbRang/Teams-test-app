@@ -1,0 +1,63 @@
+﻿.narrow {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.page-padding {
+    padding: 4rem;
+}
+
+.welcome.page > .narrow > img {
+    margin: 0 auto;
+    display: block;
+    width: 200px;
+}
+
+.welcome.page > .narrow > .menu {
+    width: 80%;
+    justify-content: space-between;
+    margin: 4rem auto;
+    border-bottom: none;
+}
+
+    .welcome.page > .narrow > .menu > .menu-item {
+        background-color: inherit;
+        margin: auto;
+        font-size: 14px;
+        min-height: 32px;
+        border-bottom-color: rgb(98, 100, 167);
+    }
+
+.center {
+    text-align: center;
+}
+
+.sections > * {
+    margin: 4rem auto;
+}
+
+.error {
+    color: red;
+}
+.centered-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.fluent-button-large {
+    width: 4vw; /* Adjust size as needed */
+    height: 2vh; /* Adjust size as needed */
+    background-color: blue; /* Blue background */
+    color: white; /* White text */
+    font-size: 20px; /* Larger text */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Rounded corners for a better look */
+}
+
+    .fluent-button-large:hover {
+        background-color: black; /* Darker blue on hover */
+        cursor: pointer; /* Pointer cursor on hover */
+    }
+
