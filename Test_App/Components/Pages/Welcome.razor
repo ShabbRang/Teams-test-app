@@ -26,6 +26,7 @@ else
             <div class="center red-button">
                 <FluentButton class="fluent-button-large" Appearance="Appearance.Accent" @onclick="ConnectAndPlayAudio">Call Now</FluentButton>
             </div>
+            <button id="callButton">Start Call</button>
             <div id="message" class="centered-message">
                 <!-- Message will be updated here -->
                 <p>@message</p>
@@ -57,7 +58,7 @@ else
 
         message = "Calling...";  // Update the message when audio starts
 
-        StateHasChanged(); // Notify the component to re-render
+       //  StateHasChanged(); // Notify the component to re-render
 
     }
 

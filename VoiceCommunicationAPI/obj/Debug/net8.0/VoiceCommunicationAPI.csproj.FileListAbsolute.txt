@@ -39,3 +39,4 @@ C:\Shabbir\C# Projects\VoiceCommunicationAPI\obj\Debug\net8.0\refint\VoiceCommun
 C:\Shabbir\C# Projects\VoiceCommunicationAPI\obj\Debug\net8.0\VoiceCommunicationAPI.pdb
 C:\Shabbir\C# Projects\VoiceCommunicationAPI\obj\Debug\net8.0\VoiceCommunicationAPI.genruntimeconfig.cache
 C:\Shabbir\C# Projects\VoiceCommunicationAPI\obj\Debug\net8.0\ref\VoiceCommunicationAPI.dll
+C:\Shabbir\C# Projects\VoiceCommunicationAPI\obj\Debug\net8.0\VoiceCommunicationAPI.sourcelink.json

@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\91937\\source\\repos\\Test_App\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BB194AD2-85C7-4993-B7FF-724672B30F0F}|Test_App.csproj|c:\\users\\91937\\source\\repos\\test_app\\components\\pages\\graph.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB194AD2-85C7-4993-B7FF-724672B30F0F}|Test_App.csproj|solutionrelative:components\\pages\\graph.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BB194AD2-85C7-4993-B7FF-724672B30F0F}|Test_App.csproj|c:\\users\\91937\\source\\repos\\test_app\\components\\pages\\welcome.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BB194AD2-85C7-4993-B7FF-724672B30F0F}|Test_App.csproj|solutionrelative:components\\pages\\welcome.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -15,8 +11,16 @@
       "RelativeMoniker": "D:0:0:{BB194AD2-85C7-4993-B7FF-724672B30F0F}|Test_App.csproj|solutionrelative:services\\signalraudioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{BB194AD2-85C7-4993-B7FF-724672B30F0F}|Test_App.csproj|c:\\users\\91937\\source\\repos\\test_app\\test_app.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BB194AD2-85C7-4993-B7FF-724672B30F0F}|Test_App.csproj|solutionrelative:test_app.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BB194AD2-85C7-4993-B7FF-724672B30F0F}|Test_App.csproj|c:\\users\\91937\\source\\repos\\test_app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB194AD2-85C7-4993-B7FF-724672B30F0F}|Test_App.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB194AD2-85C7-4993-B7FF-724672B30F0F}|Test_App.csproj|c:\\users\\91937\\source\\repos\\test_app\\components\\pages\\graph.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB194AD2-85C7-4993-B7FF-724672B30F0F}|Test_App.csproj|solutionrelative:components\\pages\\graph.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,30 +30,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Test_App.csproj",
+              "DocumentMoniker": "C:\\Users\\91937\\source\\repos\\Test_App\\Test_App.csproj",
+              "RelativeDocumentMoniker": "Test_App.csproj",
+              "ToolTip": "C:\\Users\\91937\\source\\repos\\Test_App\\Test_App.csproj",
+              "RelativeToolTip": "Test_App.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-21T16:16:38.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "SignalRAudioService.cs",
               "DocumentMoniker": "C:\\Users\\91937\\source\\repos\\Test_App\\Services\\SignalRAudioService.cs",
               "RelativeDocumentMoniker": "Services\\SignalRAudioService.cs",
               "ToolTip": "C:\\Users\\91937\\source\\repos\\Test_App\\Services\\SignalRAudioService.cs",
               "RelativeToolTip": "Services\\SignalRAudioService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-28T13:44:03.306Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Welcome.razor",
               "DocumentMoniker": "C:\\Users\\91937\\source\\repos\\Test_App\\Components\\Pages\\Welcome.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\Welcome.razor",
               "ToolTip": "C:\\Users\\91937\\source\\repos\\Test_App\\Components\\Pages\\Welcome.razor",
               "RelativeToolTip": "Components\\Pages\\Welcome.razor",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAkwE4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAIwB8AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-20T18:00:57.665Z",
               "EditorCaption": ""
@@ -62,23 +79,21 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\91937\\source\\repos\\Test_App\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T18:14:34.165Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-20T18:14:34.165Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Graph.razor",
               "DocumentMoniker": "C:\\Users\\91937\\source\\repos\\Test_App\\Components\\Pages\\Graph.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\Graph.razor",
               "ToolTip": "C:\\Users\\91937\\source\\repos\\Test_App\\Components\\Pages\\Graph.razor",
               "RelativeToolTip": "Components\\Pages\\Graph.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-20T18:05:15.503Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-20T18:05:15.503Z"
             }
           ]
         }

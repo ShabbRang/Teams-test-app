@@ -20,10 +20,10 @@ namespace Test_App.Services  // Make sure the namespace matches your project
             Console.WriteLine($"Connected to SignalR hub. Connection ID: {_connection.ConnectionId}");
         }
 
-        public Task PlayAudioAsync(Action onAudioStarted, Action onAudioEnded)
+        public async Task PlayAudioAsync(Action onAudioStarted, Action onAudioEnded)
         {
             // Subscribe to the SignalR event
-            _connection.On<byte[]>("ReceiveVoiceData", audioData =>
+            _connection.On<byte[]>("ReceiveVoiceData", async audioData =>
             {
                 onAudioStarted();  // Call the onAudioStarted action
 
@@ -34,16 +34,15 @@ namespace Test_App.Services  // Make sure the namespace matches your project
                     waveOut.Init(reader);
                     waveOut.Play();
 
-                    // Wait for the audio to finish playing
-                    while (waveOut.PlaybackState == PlaybackState.Playing)
-                    {
-                        Task.Delay(100).Wait();
-                    }
+                    // Use a TaskCompletionSource to await the playback completion
+                    var tcs = new TaskCompletionSource<bool>();
+                    waveOut.PlaybackStopped += (sender, e) => tcs.SetResult(true);
+
+                    await tcs.Task; // Await until the audio playback finishes
                 }
 
                 onAudioEnded();  // Call the onAudioEnded action
             });
-            return Task.CompletedTask;
         }
     }
 }
